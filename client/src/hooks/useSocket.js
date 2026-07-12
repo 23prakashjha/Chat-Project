@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || window.location.origin;
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://chat-project-xg2b.onrender.com';
 
 export const useSocket = (username) => {
   const [socket, setSocket] = useState(null);
